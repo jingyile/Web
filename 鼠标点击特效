@@ -1,0 +1,59 @@
+//这些文件加在footer.php中
+<!--个人网站基本信息-->
+</h2>
+<p style="color: #EF27E9">不必仰望别人,自己亦是风景。</br>
+<p style="color: #141312">本网站已稳定运行 <SPAN id=span_dt_dt style="color: #F37934;"></SPAN>
+<SCRIPT language=javascript>
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("5/27/2018 08:30:00");//这个日期是可以修改的
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=Math.floor(e_hrsold);
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=Math.floor((e_hrsold-hrsold)*60);
+seconds=Math.floor((e_minsold-minsold)*60);
+span_dt_dt.innerHTML=""+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+}
+show_date_time();
+</SCRIPT>
+</footer>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
+<script type="text/javascript">
+/*-------------------------------------------------*/
+/* 鼠标点击显示字体特效！
+/*-------------------------------------------------*/
+var a_idx = 0;
+jQuery(document).ready(function($) {
+$("body").click(function(e) {
+var a = new Array("欢迎您", "么么哒", "你真好", "棒棒哒", "真可爱", "你最美", "喜欢你" ,"真聪明", "爱你哦", "好厉害", "你真帅", "祝福你");
+var $i = $("<span/>").text(a[a_idx]);
+a_idx = (a_idx + 1) % a.length;
+var x = e.pageX,
+y = e.pageY;
+$i.css({
+"z-index": 99999,
+"top": y - 20,
+"left": x,
+"position": "absolute",
+"font-weight": "bold",
+"color": "#ff6651"
+});
+$("body").append($i);
+$i.animate({
+"top": y - 180,
+"opacity": 0
+},
+1500,
+function() {
+$i.remove();
+});
+});
+});
+</script>
