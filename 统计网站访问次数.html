@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>统计网站访问次数</title>
+</head>
+<body>
+<script type="text/javascript">
+	<!--localStorage.clear();-->
+	if(localStorage.count)
+	{
+		localStorage.count=Number(localStorage.count)+1;
+	}
+else
+	localStorage.count=1;
+document.write("您访问该网站的次数为："+localStorage.count);
+</script>
+
+</body>
+</html>
