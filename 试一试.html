@@ -1,0 +1,74 @@
+<script type="text/javascript">
+	Page({ 
+  data: {
+    shuzhi:1,
+    tishi:'余北小可爱! - By:你的小跟班'
+  }, 
+  hao(){
+    this.setData({
+      tishi:'亲爱的小可爱!真的吗?你答应了?',
+      shuzhi:1
+    })
+  },
+  nohao() {
+    console.log(this.data.shuzhi);
+    var i = this.data.shuzhi 
+    var tishi
+   switch (i) {
+      case 1:
+       tishi ='工资上交'
+        break;
+      case 2:
+       tishi="家务全包"
+        break;
+      case 3:
+       tishi ="房产证写你的名字"
+       break; 
+      case 4:
+       tishi =("保大");
+        break;
+      case 5:
+       tishi =("我妈会游泳");
+        break;
+      case 6:
+       tishi =("宠你");
+        break;
+      case 7:
+       tishi =("护犊子");
+        break;
+      case 8:
+       tishi =("不凶人");
+        break;
+      default:
+       tishi ="答应我吧"
+    } 
+   i++;
+   console.log(tishi); 
+    this.setData({
+      tishi: tishi,
+      shuzhi: i
+    })
+    }    
+})
+
+</script>
+<meta charset="UTF-8">
+<view class='box'>
+  <view class='bt'>
+    <text>
+    小姐姐，我观察你很久了
+ 
+    做我女朋友好不好？
+    </text>
+  </view>
+  <view class='imgfd-a'>
+    <image class='imgfd' src='./img/1.gif'></image>
+  </view>
+  <view>
+    <button class='odaa' size='mini' bindtap='hao'>好</button>
+    <button class='odaa' size='mini'bindtap='nohao'>不好</button>
+  </view> 
+  <icon class='icona' type='info' size='13' color='red'></icon>
+  <text class='aastxt'> {{tishi}} </text>
+  <icon class='icona' type='info' size='13' color='red'></icon>
+</view>
