@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>????????</title>
+</head>
+<body bgcolor="#49F985">
+	<form>
+		<fieldset>
+			<legend>个人基本信息：</legend>
+			姓名：<input type="text"  value="输入您的姓名" onfocus="if (value =='输入您的姓名'){value
+				=''}"onblur="if (value
+				==''){value='输入您的姓名'}"/><br/>				
+				性别：
+				<input type="radio" name="sex" value="男"  checked/>男
+				<input type="radio" name="sex" value="女" />女</br>
+				年龄：<input type="number" value="20" min="1" max="120" /> </br>
+				生日：<input type="date"/> </br>
+				班级：<input type="text" value="如：计163-1" onfocus="if (value =='如：计163-1'){value
+					=''}"onblur="if (value==''){value='如：计163-1'}"/></br>
+					电话：<input type="text" pattern="[0-9]{11}" value="请输入11位纯数字" onfocus="if (value =='请输入11位纯数字'){value
+						=''}"onblur="if (value==''){value='请输入11位纯数字'}"/><br>
+						Q Q：<input type="text" pattern="[0-9]" value="请输入您的QQ号码" onfocus="if (value=='请输入您的QQ号码') {value=''}" onblur="if(value==''){value='请输入您的QQ号码'}"/></br>
+						邮箱：<input type="email" value="请输入您的邮箱地址" onfocus="if (value=='请输入您的邮箱地址') {value=''}" onblur="if(value==''){value='请输入您的邮箱地址'}"/></br>
+						身份证号：<input type="text" pattern="([0-9]{18})|(^[0-9]{17}[X]{1}$)" value="请正确输入身份证号" onfocus="if (value=='请正确输入身份证号') {value=''}" onblur="if(value==''){value='请正确输入身份证号'}"/></br>
+					</fieldset>
+					<fieldset><legend>个人喜好信息：</legend>
+					喜欢的动漫：<input type="text" value="如：狐妖小红娘" onfocus="if (value=='如：狐妖小红娘') {value=''}" onblur="if(value==''){value='如：狐妖小红娘'}"/></br>
+					喜欢的动物：<input type="text" value="如：泰迪" onfocus="if (value=='如：泰迪') {value=''}" onblur="if(value==''){value='如：泰迪'}"/><br>
+					喜欢的植物：<input type="text" value="如：仙人掌" onfocus="if (value=='如：仙人掌') {value=''}" onblur="if(value==''){value='如：仙人掌'}"/><br>
+					喜欢的明星：<input type="text" value="如：迪丽热巴" onfocus="if (value=='如：迪丽热巴') {value=''}" onblur="if(value==''){value='如：迪丽热巴'}"/><br>
+					喜欢的异性：<input type="text" value="如：张明" onfocus="if (value=='如：张明') {value=''}" onblur="if(value==''){value='如：张明'}"/><br>
+					喜欢的网站：<input type="url" value="请输入您喜欢的网站" onfocus="if (value=='请输入您喜欢的网站') {value=''}" onblur="if(value==''){value='请输入您喜欢的网站'}"/></br>
+					喜欢的颜色：<input type="color" value="red"/></br>
+					喜欢的运动（可多选）：
+					<input type="checkbox" name="sports" value="篮球"/>篮球
+					<input type="checkbox" name="sports" value="足球"/>足球
+					<input type="checkbox" name="sports" value="乒乓球"/>乒乓球
+					<input type="checkbox" name="sports" value="羽毛球"/>羽毛球
+					<input type="checkbox" name="sports" value="网球"/>网球
+					<input type="checkbox" name="sports" value="排球"/>排球</br>
+				</fieldset>
+									你喜欢大海嘛？
+					<select name="enjoy">
+						<option>非常喜欢</option>
+						<option>还算喜欢</option>
+						<option>一般喜欢</option>
+						<option>非常讨厌</option>
+					</select></br>
+				<input type="range" name="age" min=1 max=120 />
+				<input type="submit">
+				<input type="reset"/>
+			</body>
+
