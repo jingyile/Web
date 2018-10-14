@@ -1,0 +1,36 @@
+.img1{
+	margin-left: 600px;
+	width: 300px;
+	border-radius: 20px;
+}
+.img3{
+	margin-left: 400px;
+	width: 700px;
+	border-radius: 0px;
+}
+.txt{
+	font-size: 24px;
+}
+.imgg{
+	margin-left: 50px;
+	width: 400px;
+	border-radius: 20px;
+}
+img:hover{
+	transform:scale(1.5);
+}
+body {
+	cursor: url(http://jingyile.gotoip2.com/wp-content/uploads/2018/05/shubiao1.png), default;
+}
+a:hover{cursor:url(http://jingyile.gotoip2.com/wp-content/uploads/2018/05/shubiao2.png), pointer;}
+td{
+	align-content: center;
+	text-align: center;
+	color: #F17716;
+	font-size: 24px;
+}
+a{text-decoration:none}//取消锚的下划线
+
+
+
+
