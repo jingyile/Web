@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>图片随机浮动</title>
+<style type="text/css">
+img{
+      top:20px;
+      left: 20px;
+      position:absolute;
+      transition: left 3s ease-in-out, top 3s ease-in-out;
+}
+</style>
+<script language="javascript" type="text/javascript">
+  function imgfloat(){
+    var w=document.body.clientWidth-100;//限制区域
+    var h=document.body.clientHeight-100;
+  var floatimg=document.getElementById("floatimg");
+  // var x=200,y=200;
+  //alert("恭喜IG！！！恭喜LPL！！！");
+     var x=Math.floor(Math.random()*h);    
+     var y=Math.floor(Math.random()*w);
+     //document.write(x);
+    floatimg.style.top=x+"px"; 
+    floatimg.style.left=y+"px";;
+       //setTimeout("imgfloat()",6000);  设置循环执行 
+}
+</script>
+</head>
+<body>
+<img id="floatimg" onclick="imgfloat()" src="http://www.jingyile.cn/wp-content/uploads/2018/10/10240.png" height="150" width="100">
+</body>
+</html>

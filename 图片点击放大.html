@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>图片点击放大</title>
+<style type="text/css">
+</style>
+<script language="javascript" type="text/javascript">
+    var flag=true;//一开始标记为正常状态
+  function bigimg(){
+  var img = document.getElementById('imgb');//图片元素
+       var imgH = img.height; 
+       var imgW = img.width;
+       if(flag){
+           img.height = imgH*2;
+           img.width = imgW*2;
+           flag = false;//把状态设为放大状态
+       }
+       else{
+           img.height = imgH/2;
+           img.width = imgW/2;
+           flag = true;//把状态设为正常状态
+}
+}
+</script>
+</head>
+<body>
+<img id="imgb" onclick="bigimg()" src="http://www.jingyile.cn/wp-content/uploads/2018/10/10240.png" height="150" width="100">
+</body>
+</html>

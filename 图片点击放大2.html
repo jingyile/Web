@@ -1,0 +1,34 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>多张图片点击放大</title>
+<style type="text/css">
+</style>
+<script language="javascript" type="text/javascript">
+      var flag=true;//一开始标记为正常状态
+  function bigimg(id){
+       var imgH = id.height; 
+       var imgW = id.width;
+       if(flag){
+           // id.style.left="20px";
+           // id.style.top="20px";
+           // id.style.position="absolute";
+           id.height = imgH*2;
+           id.width = imgW*2;
+           flag = false;//把状态设为放大状态
+       }
+       else{
+          // id.style.position="static";
+           id.height = imgH/2;
+           id.width = imgW/2;
+           flag = true;//把状态设为正常状态
+}
+}
+</script>
+</head>
+<body>
+<img onclick="bigimg(this)" src="http://www.jingyile.cn/wp-content/uploads/2018/10/10240.png" height="150" width="100">
+<img onclick="bigimg(this)" src="http://www.jingyile.cn/wp-content/uploads/2018/05/5200.png" height="200" width="150">
+<img onclick="bigimg(this)" src="http://www.jingyile.cn/wp-content/uploads/2018/09/9.172.png" height="200" width="200">
+</body>
+</html>
