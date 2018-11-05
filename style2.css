@@ -1,0 +1,181 @@
+body {
+	font-family:Font1;
+	cursor: url(http://jingyile.gotoip2.com/wp-content/uploads/2018/05/shubiao1.png), default;
+}
+a:hover{cursor:url(http://jingyile.gotoip2.com/wp-content/uploads/2018/05/shubiao2.png), pointer;}
+.img00{
+      top:20px;
+      left: 20px;
+      position:absolute;
+      transition: left 3s ease-in-out, top 3s ease-in-out;
+}
+#id0{
+	margin-top:10px;
+	margin-left: 25px;
+}
+#id1{
+	position: relative;
+	width: 100%;
+	height: 130px;
+	margin: 0 auto;	
+	background:  url(images/p1.jpg) center bottom no-repeat;
+}
+
+#id2 {
+	width:  760px;
+	height: 130px;
+	margin: 0 auto;
+	padding: 0 16px 0 64px;
+	background: url(images/p2.jpg) center bottom no-repeat;
+}
+#id2  #site_title {
+	float: left;
+	width: 150px;
+	padding: 5px 0;
+	margin: 50px 0 0 0;	
+}
+#id3 {
+	width: 100%;
+	height: 455px;
+	margin: 0 auto;	
+	background: url(images/p33.jpg) top center no-repeat;
+}
+#id4 {
+	width:  760px;
+	height: 455px;
+	margin: 0 auto;
+	padding: 0 16px 0 64px;
+	background:  url(images/p4.jpg) top center no-repeat; 
+}
+.img1{
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.img2{
+	margin-top: 10px;
+	margin-right: 20px;
+	border-radius: 20px;
+}
+.img3{
+	margin-top: 10px;
+	margin-left: 170px;
+	border-radius: 20px;
+}
+.ul1{
+	padding-top:70px;
+}
+
+#site_title h1 a {
+	font-family: Font1;
+	margin: 0px;
+	padding: 0px;
+	font-size: 28px;
+	color: #0e62a6;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#site_title h1 a:hover {
+    color: red;
+}
+
+#site_title h1 a span {
+	display: block;
+	margin-top: 5px;
+	font-size: 20px;
+	color: #E049EC;
+	font-weight: normal;
+}
+
+#site_title h1 a:hover span {
+	font-weight: normal;
+}
+#twitter a {
+	float: right;
+	display: block;
+	height: 150px;
+	padding: 30px 60px 0 0;
+	margin: 40px 0 0 0;
+	font-size: 16px;
+	color: #b7992e;
+	background: url(images/p92.png) right bottom no-repeat;
+}
+#twitter a:hover {
+	color: #e4bd33;
+	text-decoration: none;
+}
+#id5 {
+	clear: both;
+	width: 100%;
+	height: 235px;
+	margin: 0 auto;	
+	background: url(images/p5.jpg) top center no-repeat;
+}
+#id6 {
+	width:  100%;
+	height: 235px;
+	margin: 0 auto;
+	padding: 7px 16px 0 474px;
+
+	color: #000000;
+	background: url(images/p66.jpg) top center no-repeat;
+}
+
+
+#id7{
+	text-align: center;
+	color:white;
+	background-color:#0A0808;
+}
+#id8{
+	margin-left: 380px;
+}
+#id9{
+
+}
+#id10{
+	text-align: center;
+	font-size: 48px;
+	margin-left: 320px;
+}
+.text-head
+{
+	margin:0,auto;
+	font-size: 30px;
+	color: #EA513C;
+
+}
+.txt0{
+	margin-top: 20px;
+	text-align: center;
+    font-family: myFont;
+	font-size:38px;
+	color:white;
+}
+.txt0:hover{
+	color:#E54AF1;
+}
+.txt1{
+	font-family: Font1;
+	margin-top: 10px;
+	font-size: 26px;
+	color:green;
+}
+.txt2{
+	font-family: Font1;
+	margin-top: 10px;
+	font-size: 18px;
+	color:#BF6969;
+}
+.txt3{
+	font-family: Font1;
+	font-size: 18px;
+	color:#C63ADF;
+}
+.txt4{
+	font-family: Font1;
+	font-size: 18px;
+	color:#6A55EB;
+}
+.cleaner_h10 { clear: both; width:100%; height: 10px; }
+/*
