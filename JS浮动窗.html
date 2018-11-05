@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<title>Demo</title> 
+<script type="text/javascript"> 
+function over(){
+var btn = document.getElementsByTagName('button')[0]; 
+var flt = document.getElementsByTagName('span')[0];
+var x = btn.offsetLeft +45 + 'px'; 
+var y = btn.offsetTop  -10 + 'px'; 
+flt.style.top = x; 
+flt.style.left =y ; 
+flt.style.display = 'block'
+}
+ 
+function out(){
+var flt = document.getElementsByTagName('span')[0]; 
+flt.style.display = 'none'; 
+}
+ 
+ 
+</script> 
+ 
+</head> 
+<body> 
+<button id="btn" style="position: absolute;" onmouseout="out()" onmouseover="over()">Click</button> 
+ 
+<span style="display: none;position: absolute;"> <img src="images/p1.jpg" height="150" width="100"></span>
+ 
+</body> 
+</html> 
+</html> 
