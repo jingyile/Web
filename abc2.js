@@ -1,4 +1,4 @@
-//alert("恭喜IG！！！恭喜LPL！！！")
+alert("恭喜IG！！！恭喜LPL！！！")
 function changetext(id)
 {
 id.innerHTML="此条战报仅供娱乐，请勿当真";
